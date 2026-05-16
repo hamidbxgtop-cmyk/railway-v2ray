@@ -1,19 +1,28 @@
 {
-  "inbounds": [{
-    "port": 443,
-    "protocol": "vmess",
-    "settings": {
-      "clients": [{
-        "id": "2c4f1f40-ffff-4b26-8f00-123456789abc",
-        "alterId": 0
-      }]
-    },
-    "streamSettings": {
-      "network": "ws"
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "fd81d88a-60f5-4d02-95cf-fc8a21c09e36",
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/Telegramss"
+        }
+      }
     }
-  }],
-  "outbounds": [{
-    "protocol": "freedom",
-    "settings": {}
-  }]
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
 }
